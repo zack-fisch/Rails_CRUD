@@ -1,0 +1,10 @@
+<h1>This is index</h1>
+
+<h2>Here are your movies</h2>
+
+<% @movies.each do |movie| %>
+	<p>ID: <%= movie.id %> |
+	Title: <%= movie.title %> |
+	Director: <%= movie.director %> |
+	<%= link_to 'Delete', movie_path(movie), :method => :delete %> </p>
+<% end %>
