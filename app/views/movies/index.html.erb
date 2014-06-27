@@ -6,5 +6,8 @@
 	<p>ID: <%= movie.id %> |
 	Title: <%= movie.title %> |
 	Director: <%= movie.director %> |
-	<%= link_to 'Delete', movie_path(movie), :method => :delete %> </p>
+	<%= link_to 'Delete', movie_path(movie), :method => :delete, data: {confirm: "Are you sure?"} %> </p>
+
+		key: value
+		:key => value
 <% end %>
